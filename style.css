@@ -1,0 +1,86 @@
+#table-of-contents__container {
+background-color: #153879;
+padding: 32px;
+}
+
+#table-of-contents {
+max-width: 400px;
+margin: auto;
+background-color: white;
+padding: 32px;
+border-radius: 24px;
+}
+#table-of-contents h2 {
+margin-top: 0;
+padding-top: 0;
+border-top: none;
+text-align: center;
+}
+#table-of-contents h2::after {
+	width: 100%;
+	margin: 16px auto;
+}
+
+body {
+	counter-reset: h2counter;
+}
+h2::before {
+	content: counter(h2counter) ".  ";
+	counter-increment: h2counter;
+}
+ol {
+	list-style: none;
+	counter-reset: item;
+	margin-top: 16px;
+}
+ol > li::before {
+	content: counter(item) ".";
+	counter-increment: item;
+	display: inline-block;
+	min-width: 24px;
+	font-weight: 500;
+}
+.not-numbered::before,
+.unlisted::before {
+counter-increment: none;
+content: " ";
+}
+
+.clickable-list-item,
+.div-go-to {
+cursor: pointer;
+width: fit-content;
+width: -moz-fit-content;
+}
+.clickable-list-item span {
+	text-decoration: none;
+	color: inherit;
+}
+@media (hover: hover) and (pointer: fine) {
+.clickable-list-item span:hover {
+	color: #4d7eda;
+}
+}
+
+.divs-go-to__container {
+text-align: center;
+position: relative;
+margin-top: -8px;
+margin-bottom: 8px;
+}
+
+.div-go-to {
+display: inline-block;
+}
+.div-go-to span {
+padding-top: 8px;
+color: #009be2;
+}
+@media (hover: hover) and (pointer: fine) {
+.div-go-to span:hover {
+	color: #000;
+}
+}
+.div-go-to + .div-go-to::before {
+content: " - ";
+}

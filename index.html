@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Interactive Table Of Contents – Ralf’s Portfolio</title>
+		<meta name="description" content="A jQuery script and some CSS classes that create a table of contents whose topics scroll the screen to their subject when clicked."/>
+
+		<link rel="stylesheet" href="/alice.css">
+		<link rel="stylesheet" href="style.css">
+
+		<link rel="canonical" href="ralf.infinityfreeapp.com/interactive-table-of-contents">
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Interactive Table Of Contents – Ralf’s Portfolio">
+		<meta property="og:image" content="thumbnail.jpg" alt="Presentation of the website ralf.infinityfreeapp.com">
+		<meta property="og:description" content="A jQuery script and some CSS classes that create a table of contents whose topics scroll the screen to their subject when clicked.">
+		<meta property="og:url" content="ralf.infinityfreeapp.com/interactive-table-of-contents">
+
+		<script src="jQuery.js"></script>
+		<script src="SmoothScrolling.js"></script>
+		<script src="InteractiveTableOfContents.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a id="logo" href="/">
+				<span>Ralf’s Portfolio</span>
+				<span><b>Programming projects</b> developed by <b>Ralf Gunter Rotstein</b> (and a poem).</span>
+			</a>
+		</header>
+
+		<div id="intro">
+			<h1>Interactive Table Of Contents</h1>
+			<p>This is a minimalist example of a <b>jQuery</b> script and some <b>CSS</b> styles that, together, create a table of contents whose topics scroll the screen to their subject when clicked, besides clickable SPANS that scroll the screen back to the top. <b>Click the topics</b> of the TOC to scroll to their subject, and the word “beginning” or “topics” to scroll back. (Requires a scrolling interface with the method “scrollToTargetY(yInPixels)”. I’ve used <a href="/smooth-scrolling">my own</a>.)</p>
+		</div>
+
+		<div id="table-of-contents__container"></div>
+
+		<main>
+			<div class="book">
+
+			<h2>Alice’s Adventures in Wonderland</h2>
+			
+			<h3>CHAPTER I.
+			Down the Rabbit-Hole</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			Alice was beginning to get very tired of sitting by her sister on the bank, and
+			of having nothing to do: once or twice she had peeped into the book her sister
+			was reading, but it had no pictures or conversations in it, “and what is
+			the use of a book,” thought Alice “without pictures or
+			conversations?”
+			</p>
+			
+			<h3>CHAPTER II.
+			The Pool of Tears</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			“Curiouser and curiouser!” cried Alice (she was so much surprised,
+			that for the moment she quite forgot how to speak good English); “now
+			I’m opening out like the largest telescope that ever was! Good-bye,
+			feet!” (for when she looked down at her feet, they seemed to be almost
+			out of sight, they were getting so far off). “Oh, my poor little feet, I
+			wonder who will put on your shoes and stockings for you now, dears? I’m
+			sure <i>I</i> shan’t be able! I shall be a great deal too far off to
+			trouble myself about you: you must manage the best way you can;—but I
+			must be kind to them,” thought Alice, “or perhaps they won’t
+			walk the way I want to go! Let me see: I’ll give them a new pair of boots
+			every Christmas.”
+			</p>
+			
+			<h3>CHAPTER III.
+			A Caucus-Race and a Long Tale</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			They were indeed a queer-looking party that assembled on the bank—the
+			birds with draggled feathers, the animals with their fur clinging close to
+			them, and all dripping wet, cross, and uncomfortable.
+			</p>
+			
+			<h3>CHAPTER IV.
+			The Rabbit Sends in a Little Bill</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			It was the White Rabbit, trotting slowly back again, and looking anxiously
+			about as it went, as if it had lost something; and she heard it muttering to
+			itself “The Duchess! The Duchess! Oh my dear paws! Oh my fur and
+			whiskers! She’ll get me executed, as sure as ferrets are ferrets! Where
+			<i>can</i> I have dropped them, I wonder?” Alice guessed in a moment that
+			it was looking for the fan and the pair of white kid gloves, and she very
+			good-naturedly began hunting about for them, but they were nowhere to be
+			seen—everything seemed to have changed since her swim in the pool, and
+			the great hall, with the glass table and the little door, had vanished
+			completely.
+			</p>
+			
+			<h3>CHAPTER V.
+			Advice from a Caterpillar</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			The Caterpillar and Alice looked at each other for some time in silence: at
+			last the Caterpillar took the hookah out of its mouth, and addressed her in a
+			languid, sleepy voice.
+			</p>
+			
+			<h3>CHAPTER VI.
+			Pig and Pepper</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			For a minute or two she stood looking at the house, and wondering what to do
+			next, when suddenly a footman in livery came running out of the wood—(she
+			considered him to be a footman because he was in livery: otherwise, judging by
+			his face only, she would have called him a fish)—and rapped loudly at the
+			door with his knuckles. It was opened by another footman in livery, with a
+			round face, and large eyes like a frog; and both footmen, Alice noticed, had
+			powdered hair that curled all over their heads. She felt very curious to know
+			what it was all about, and crept a little way out of the wood to listen.
+			</p>
+			
+			<h3>CHAPTER VII.
+			A Mad Tea-Party</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			There was a table set out under a tree in front of the house, and the March
+			Hare and the Hatter were having tea at it: a Dormouse was sitting between them,
+			fast asleep, and the other two were using it as a cushion, resting their elbows
+			on it, and talking over its head. “Very uncomfortable for the
+			Dormouse,” thought Alice; “only, as it’s asleep, I suppose it
+			doesn’t mind.”
+			</p>
+			
+			<h3>CHAPTER VIII.
+			The Queen’s Croquet-Ground</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			A large rose-tree stood near the entrance of the garden: the roses growing on
+			it were white, but there were three gardeners at it, busily painting them red.
+			Alice thought this a very curious thing, and she went nearer to watch them, and
+			just as she came up to them she heard one of them say, “Look out now,
+			Five! Don’t go splashing paint over me like that!”
+			</p>
+			
+			<h3>CHAPTER IX.
+			The Mock Turtle’s Story</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			“You can’t think how glad I am to see you again, you dear old
+			thing!” said the Duchess, as she tucked her arm affectionately into
+			Alice’s, and they walked off together.
+			</p>
+			
+			<h3>CHAPTER X.
+			The Lobster Quadrille</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			The Mock Turtle sighed deeply, and drew the back of one flapper across his
+			eyes. He looked at Alice, and tried to speak, but for a minute or two sobs
+			choked his voice. “Same as if he had a bone in his throat,” said
+			the Gryphon: and it set to work shaking him and punching him in the back. At
+			last the Mock Turtle recovered his voice, and, with tears running down his
+			cheeks, he went on again:—
+			</p>
+			
+			<h3>CHAPTER XI.
+			Who Stole the Tarts?</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			The King and Queen of Hearts were seated on their throne when they arrived,
+			with a great crowd assembled about them—all sorts of little birds and
+			beasts, as well as the whole pack of cards: the Knave was standing before them,
+			in chains, with a soldier on each side to guard him; and near the King was the
+			White Rabbit, with a trumpet in one hand, and a scroll of parchment in the
+			other. In the very middle of the court was a table, with a large dish of tarts
+			upon it: they looked so good, that it made Alice quite hungry to look at
+			them—“I wish they’d get the trial done,” she thought,
+			“and hand round the refreshments!” But there seemed to be no chance
+			of this, so she began looking at everything about her, to pass away the time.
+			</p>
+			
+			<h3>CHAPTER XII.
+			Alice’s Evidence</h3>
+			<div class="divs-go-to__container"></div>
+			
+			<p>
+			“Here!” cried Alice, quite forgetting in the flurry of the moment
+			how large she had grown in the last few minutes, and she jumped up in such a
+			hurry that she tipped over the jury-box with the edge of her skirt, upsetting
+			all the jurymen on to the heads of the crowd below, and there they lay
+			sprawling about, reminding her very much of a globe of goldfish she had
+			accidentally upset the week before.
+			</p>
+
+
+
+
+
+
+
+
+
+
+			<h2>Through The Looking-Glass</h2>
+
+				<h3>CHAPTER I.
+				Looking-Glass House</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>One thing was certain, that the <i>white</i> kitten had had nothing to do with it:—it was the black kitten’s fault entirely. For the white kitten had been having its face washed by the old cat for the last quarter of an hour (and bearing it pretty well, considering); so you see that it <i>couldn’t</i> have had any hand in the mischief.</p>
+
+				<h3>CHAPTER II.
+				The Garden of Live Flowers</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>“I should see the garden far better,” said Alice to herself, “if I could get to the top of that hill: and here’s a path that leads straight to it—at least, no, it doesn’t do that—” (after going a few yards along the path, and turning several sharp corners), “but I suppose it will at last. But how curiously it twists! It’s more like a corkscrew than a path! Well, <i>this</i> turn goes to the hill, I suppose—no, it doesn’t! This goes straight back to the house! Well then, I’ll try it the other way.”</p>
+
+				<h3>CHAPTER III.
+				Looking-Glass Insects</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>Of course the first thing to do was to make a grand survey of the country she was going to travel through. “It’s something very like learning geography,” thought Alice, as she stood on tiptoe in hopes of being able to see a little further. “Principal rivers—there <i>are</i> none. Principal mountains—I’m on the only one, but I don’t think it’s got any name. Principal towns—why, what <i>are</i> those creatures, making honey down there? They can’t be bees—nobody ever saw bees a mile off, you know—” and for some time she stood silent, watching one of them that was bustling about among the flowers, poking its proboscis into them, “just as if it was a regular bee,” thought Alice.</p>
+
+				<h3>CHAPTER IV.
+				Tweedledum And Tweedledee</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>They were standing under a tree, each with an arm round the other’s neck, and Alice knew which was which in a moment, because one of them had “DUM” embroidered on his collar, and the other “DEE.” “I suppose they’ve each got ‘TWEEDLE’ round at the back of the collar,” she said to herself.</p>
+
+				<h3>CHAPTER V.
+				Wool and Water</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>She caught the shawl as she spoke, and looked about for the owner: in another moment the White Queen came running wildly through the wood, with both arms stretched out wide, as if she were flying, and Alice very civilly went to meet her with the shawl.</p>
+
+				<h3>CHAPTER VI.
+				Humpty Dumpty</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>However, the egg only got larger and larger, and more and more human: when she had come within a few yards of it, she saw that it had eyes and a nose and mouth; and when she had come close to it, she saw clearly that it was HUMPTY DUMPTY himself. “It can’t be anybody else!” she said to herself. “I’m as certain of it, as if his name were written all over his face.”</p>
+
+				<h3>CHAPTER VII.
+				The Lion and the Unicorn</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>The next moment soldiers came running through the wood, at first in twos and threes, then ten or twenty together, and at last in such crowds that they seemed to fill the whole forest. Alice got behind a tree, for fear of being run over, and watched them go by.</p>
+
+				<h3>CHAPTER VIII.
+				“It’s my own Invention”</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>After a while the noise seemed gradually to die away, till all was dead silence, and Alice lifted up her head in some alarm. There was no one to be seen, and her first thought was that she must have been dreaming about the Lion and the Unicorn and those queer Anglo-Saxon Messengers. However, there was the great dish still lying at her feet, on which she had tried to cut the plum-cake, “So I wasn’t dreaming, after all,” she said to herself, “unless—unless we’re all part of the same dream. Only I do hope it’s <i>my</i> dream, and not the Red King’s! I don’t like belonging to another person’s dream,” she went on in a rather complaining tone: “I’ve a great mind to go and wake him, and see what happens!”</p>
+
+				<h3>CHAPTER IX.
+				Queen Alice</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>“Well, this <i>is</i> grand!” said Alice. “I never expected I should be a Queen so soon—and I’ll tell you what it is, your majesty,” she went on in a severe tone (she was always rather fond of scolding herself), “it’ll never do for you to be lolling about on the grass like that! Queens have to be dignified, you know!”</p>
+
+				<h3>CHAPTER X.
+				Shaking</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>She took her off the table as she spoke, and shook her backwards and forwards with all her might.</p>
+				<p>The Red Queen made no resistance whatever; only her face grew very small, and her eyes got large and green: and still, as Alice went on shaking her, she kept on growing shorter—and fatter—and softer—and rounder—and—</p>
+
+				<h3>CHAPTER XI.
+				Waking</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>—and it really <i>was</i> a kitten, after all.</p>
+
+				<h3>CHAPTER XII.
+				Which Dreamed it?</h3>
+				<div class="divs-go-to__container"></div>
+
+				<p>“Your majesty shouldn’t purr so loud,” Alice said, rubbing her eyes, and addressing the kitten, respectfully, yet with some severity. “You woke me out of oh! such a nice dream! And you’ve been along with me, Kitty—all through the Looking-Glass world. Did you know it, dear?”</p>
+			</div>
+
+			<div id="return-link__div"><a href="/">back to Ralf’s Portfolio</a></div>
+        </main>
+
+        <div class="quote">
+            <p class="quote__text">It takes all the running you can do, to keep in the same place. If you want to get somewhere else, you must run at least twice as fast as that!</p>
+            
+            <span class="quote__author">Lewis Carroll</span>
+        </div>
+
+        
+        <footer>
+            <a href="/">Ralf’s Portfolio</a>
+        </footer>
+    </body>
+</html>
